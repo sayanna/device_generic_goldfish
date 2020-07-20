@@ -18,3 +18,13 @@ PRODUCT_SDK_ADDON_COPY_FILES += \
 
 PRODUCT_SHIPPING_API_LEVEL := 28
 TARGET_USES_MKE2FS := true
+
+PRODUCT_COPY_FILES += \
+    device/generic/goldfish/circular-driver/circular-char.ko:vendor/lib/modules/circular-char.ko
+
+PRODUCT_PACKAGES += \
+    opersyshw.default \
+    android.hardware.opersys@2.0-impl
+
+PRODUCT_PACKAGES += \
+    android.hardware.opersys@2.0.vndk-sp

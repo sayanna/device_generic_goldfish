@@ -20,6 +20,7 @@ on post-fs-data
     mkdir /data/vendor/var 0755 root root
     mkdir /data/vendor/var/run 0755 root root
     mkdir /data/vendor/var/run/netns 0755 root root
+    insmod /vendor/lib/modules/circular-char.ko
 
 on zygote-start
     # Create the directories used by the Wireless subsystem
